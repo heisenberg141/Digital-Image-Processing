@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img1 = cv2.imread('C:/Users/hites_000/Desktop/Set 11/Task 1B/Test Images/test5.png')
+img1 = cv2.imread('ImagePath')
 kernel = np.ones((5 , 5) , np.uint8)
 img = cv2.erode(img1,kernel,iterations = 1)
 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
